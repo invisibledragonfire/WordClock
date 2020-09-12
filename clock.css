@@ -1,0 +1,31 @@
+td {
+  text-align: center;
+  color: lightgray;
+}
+
+.all .all,
+.oClock .oClock,
+.to .to,
+.past .past,
+.hour1 .hour1,
+.hour2 .hour2,
+.hour3 .hour3,
+.hour4 .hour4,
+.hour5 .hour5,
+.hour6 .hour6,
+.hour7 .hour7,
+.hour8 .hour8,
+.hour9 .hour9,
+.hour10 .hour10,
+.hour11 .hour11,
+.hour12 .hour12,
+.offset5 .offset5,
+.offset10 .offset10,
+.offset15 .offset15,
+.offset20 .offset20,
+.offset25 .offset25,
+.offset30 .offset30
+ {
+  color: black;
+  text-emphasis: bold;
+}
