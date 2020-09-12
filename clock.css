@@ -1,6 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 1.4em;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clock {
+    border: .2em solid black;
+    padding: .5em;
+    border-radius: .5em;
+    background-color: rgb(135, 76, 4);
+}
+
 td {
   text-align: center;
-  color: lightgray;
+  color: rgb(154, 96, 25);
 }
 
 .all .all,
@@ -26,6 +46,7 @@ td {
 .offset25 .offset25,
 .offset30 .offset30
  {
-  color: black;
+  color: white;
+  text-shadow: 0 0 .3em lightblue;
   text-emphasis: bold;
 }

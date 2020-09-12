@@ -1,5 +1,5 @@
 const setTime = function () {
-  const clockContainer = document.getElementById("clockContainer");
+  const clockContainer = document.getElementById("clock");
   const time = new Date();
   let minutes = time.getMinutes() - (time.getMinutes() % 5);
   let hour = time.getHours() % 12;
