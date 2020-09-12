@@ -24,4 +24,4 @@ const init = function () {
   setInterval(setTime, 1000);
 };
 
-window.onload = setTime;
+window.onload = init;
