@@ -16,11 +16,20 @@ body {
   justify-content: center;
 }
 
-#clock {
+#clockEng,
+#clockNo,
+#clockDe {
   border: 0.2em solid black;
   padding: 0.5em;
   border-radius: 0.5em;
   background-color: rgb(135, 76, 4);
+  display: none;
+}
+
+.showEng #clockEng,
+.showNo #clockNo,
+.showDe #clockDe {
+  display: block;
 }
 
 td {
@@ -33,8 +42,6 @@ td {
 
 .all .all,
 .oClock .oClock,
-.to .to,
-.past .past,
 .hour1 .hour1,
 .hour2 .hour2,
 .hour3 .hour3,
@@ -52,8 +59,19 @@ td {
 .offset15 .offset15,
 .offset20 .offset20,
 .offset25 .offset25,
-.offset30 .offset30 {
+.offset30 .offset30,
+.offset35 .offset35,
+.offset40 .offset40,
+.offset45 .offset45,
+.offset50 .offset50,
+.offset55 .offset55 {
   color: white;
   text-shadow: 0 0 0.3em lightblue;
   text-emphasis: bold;
+}
+
+#languageSelect {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
