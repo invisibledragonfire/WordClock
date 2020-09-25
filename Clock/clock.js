@@ -7,17 +7,21 @@ const offsets = {
 
 const setTimeForLanguage = function (language, hour, minutes) {
   const clockContainer = document.getElementById("clock" + language);
+  let languageHour = hour;
+  if (minutes > offsets[language]) languageHour++;
+
+  languageHour = ((languageHours + 11) % 12) + 1;
 
   clockContainer.className = "";
   clockContainer.classList.add("all");
-  clockContainer.classList.add("hour" + (hour + (minutes > offsets[language])));
+  clockContainer.classList.add("hour" + languageHour);
   clockContainer.classList.add("offset" + minutes);
 };
 
 const setTime = function () {
   const time = new Date();
   const minutes = time.getMinutes() - (time.getMinutes() % 5);
-  const hour = ((time.getHours() + 11) % 12) + 1;
+  const hour = time.getHours();
 
   const currentLanguage = document.getElementById("languageSelect").value;
   setTimeForLanguage(currentLanguage, hour, minutes);
