@@ -10,7 +10,7 @@ const setTimeForLanguage = function (language, hour, minutes) {
   let languageHour = hour;
   if (minutes > offsets[language]) languageHour++;
 
-  languageHour = ((languageHours + 11) % 12) + 1;
+  languageHour = ((languageHour + 11) % 12) + 1;
 
   clockContainer.className = "";
   clockContainer.classList.add("all");
